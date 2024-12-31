@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Banner = () => {
     return (
@@ -8,9 +8,9 @@ const Banner = () => {
                 <p className="mx-40 text-white">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                 </p>
-                <NavLink to="/dashboard/cart"><button className="text-purple-600 font-bold rounded-full bg-white px-3 py-2 m-5">
+                <Link to="/dashboard/cart"><button className="text-purple-600 font-bold rounded-full bg-white px-3 py-2 m-5">
                     Shop Now
-                </button></NavLink>
+                </button></Link>
 
 
                 {/* Ensure the absolute div is within a relative container */}

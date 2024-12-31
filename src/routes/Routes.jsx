@@ -5,6 +5,8 @@ import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 import Card from "../components/Card";
 import CardDetails from "../components/CardDetails";
+import AllCart from "../components/AllCart";
+import AllFaourite from "../components/AllFaourite";
 
 const routes=createBrowserRouter([
     {
@@ -34,7 +36,17 @@ const routes=createBrowserRouter([
             },
             {
                 path:'/dashboard',
-                element:<Dashboard></Dashboard>
+                element:<Dashboard></Dashboard>,
+                children:[
+                    {
+                        path:'/dashboard/cart',
+                        element:<AllCart></AllCart>
+                    },
+                    {
+                        path:'/dashboard/favourite',
+                        element:<AllFaourite></AllFaourite>
+                    }
+                ]
             },
             {
                 path:'/product/:id',

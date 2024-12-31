@@ -10,8 +10,7 @@
             "Processor: Intel i7 11th Gen",
             "Display: 13.4-inch FHD+",
             "RAM: 16GB",
-            "Storage: 512GB SSD",
-            "Operating System: Windows 10"
+            "Storage: 512GB SSD"
         ],
         "availability": true,
         "rating":    2
@@ -27,8 +26,7 @@
             "Processor: Apple M2 Chip",
             "Display: 13.6-inch Retina",
             "RAM: 8GB",
-            "Storage: 256GB SSD",
-            "Operating System: macOS"
+            "Storage: 256GB SSD"
         ],
         "availability": true,
         "rating": 4.8
@@ -44,8 +42,7 @@
             "Processor: A17 Bionic Chip",
             "Camera: 48MP Triple Camera System",
             "Display: 6.7-inch Super Retina XDR OLED",
-            "Battery Life: Up to 28 hours",
-            "Operating System: iOS 17"
+            "Battery Life: Up to 28 hours"
         ],
         "availability": true,
         "rating": 5
@@ -61,8 +58,7 @@
             "Processor: Snapdragon 8 Gen 2",
             "Camera: 200MP Quad Camera System",
             "Display: 6.8-inch Dynamic AMOLED 2X",
-            "Battery Life: 24 hours",
-            "Operating System: Android 14"
+            "Battery Life: 24 hours"
         ],
         "availability": true,
         "rating": 4
@@ -78,8 +74,7 @@
             "Processor: Snapdragon 8 Gen 2",
             "Camera: 50MP Triple Camera System",
             "Display: 6.7-inch AMOLED",
-            "Battery Life: 25 hours",
-            "Operating System: OxygenOS based on Android 13"
+            "Battery Life: 25 hours"
         ],
         "availability": true,
         "rating": 3.5
@@ -143,8 +138,7 @@
             "Display: AMOLED",
             "Sensors: ECG, EDA, Heart Rate",
             "Battery Life: 6+ days",
-            "GPS: Built-in",
-            "Compatibility: Android, iOS"
+            "GPS: Built-in"
         ],
         "availability": true,
         "rating": 4.6
@@ -160,8 +154,7 @@
             "Display: Retina OLED",
             "Sensors: ECG, Blood Oxygen, Heart Rate",
             "Battery Life: 18 hours",
-            "GPS: Built-in",
-            "Compatibility: iOS"
+            "GPS: Built-in"
         ],
         "availability": true,
         "rating": 4.7
@@ -177,8 +170,7 @@
             "Display: AMOLED",
             "Sensors: Heart Rate, GPS, Pulse Ox",
             "Battery Life: 9 days",
-            "Water Resistance: 5 ATM",
-            "Compatibility: Android, iOS"
+            "Water Resistance: 5 ATM"
         ],
         "availability": true,
         "rating": 4.5
@@ -242,8 +234,7 @@
             "Processor: Google Tensor G3",
             "Camera: 50MP Dual Camera",
             "Display: 6.2-inch OLED",
-            "Battery Life: Up to 24 hours",
-            "Operating System: Android 15"
+            "Battery Life: Up to 24 hours"
         ],
         "availability": true,
         "rating": 3.7
@@ -259,8 +250,7 @@
             "Processor: Intel Core i7",
             "Display: 13.3-inch 4K OLED",
             "RAM: 16GB",
-            "Storage: 512GB SSD",
-            "Operating System: Windows 11"
+            "Storage: 512GB SSD"
         ],
         "availability": true,
         "rating": 2.8
@@ -276,8 +266,7 @@
             "Processor: Snapdragon 8 Gen 2",
             "Camera: 50MP Triple Camera",
             "Display: 6.73-inch AMOLED",
-            "Battery Life: 22 hours",
-            "Operating System: MIUI 14 (Android 14)"
+            "Battery Life: 22 hours"
         ],
         "availability": true,
         "rating": 1.6

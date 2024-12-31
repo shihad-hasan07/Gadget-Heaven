@@ -19,14 +19,10 @@ const Home = () => {
             <div className='flex flex-col items-center'>
                 <div className='flex gap-5'>
                     <aside className='flex flex-col'>
-                        {/* <Link >
-                        <button className='customBtn'>All Card</button>
-                    </Link> */}
                         <Categories categoryList={categoryList}></Categories>
                     </aside>
 
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                        {/* <Card></Card> */}
                         <Outlet></Outlet>
                     </div>
                 </div>

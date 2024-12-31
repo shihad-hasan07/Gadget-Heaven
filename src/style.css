@@ -17,3 +17,19 @@
     font-size: large;
     font-weight: 700;
 }
+.notactive{
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 32px;
+    color: white;
+    font-weight:500;
+    padding: 13px 64px;
+}
+.isActive{
+    background-color: white;
+    font-size: 18px;
+    border-radius: 32px;
+    color: blue;
+    font-weight:bold;
+    padding: 13px 64px;
+}
