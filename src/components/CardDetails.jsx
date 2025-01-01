@@ -7,7 +7,7 @@ import { allContext } from "../Contexts";
 
 const CardDetails = () => {
     const cardDetail = useLoaderData()
-    const { addToCart, addToFavourite } = useContext(allContext)
+    const { addToCart,addToFavourite,disableFavBtn } = useContext(allContext)
 
     const [cardData, setCardData] = useState([])
     const { id } = useParams()
@@ -64,7 +64,7 @@ const CardDetails = () => {
                         <button
                             onClick={() => addToCart(product_id,product_image, description, product_title, price)} className="flex items-center justify-center px-4 bg-blue-700 py-2 rounded-2xl text-white font-semibold gap-2">Add to card <IoCartOutline size='19' /></button>
 
-                        <button onClick={() => addToFavourite()} className="border p-2 rounded-full"><IoHeartOutline size='25' /></button>
+                        <button disabled={disableFavBtn} onClick={() => addToFavourite(product_id,product_image, description, product_title, price)} className="disabled:bg-gray-200 border p-2 rounded-full"><IoHeartOutline size='25' /></button>
                     </div>
 
                 </div>

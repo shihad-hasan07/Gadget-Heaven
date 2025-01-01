@@ -8,7 +8,7 @@ const Banner = () => {
                 <p className="mx-40 text-white">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                 </p>
-                <Link to="/dashboard/cart"><button className="text-purple-600 font-bold rounded-full bg-white px-3 py-2 m-5">
+                <Link to="/dashboard/cart"><button className="bg-purple-400 font-medium  rounded-full px-5 py-2 mt-6">
                     Shop Now
                 </button></Link>
 
@@ -17,7 +17,7 @@ const Banner = () => {
                 <div className="relative mt-5">
                     <div className="absolute inset-0 left-40">
                         <div className="bg-white bg-opacity-50 backdrop-blur-md p-3 rounded-xl border-2 w-10/12">
-                            <img className="rounded-xl h-[400px] w-full object-cover" src="public/banner.jpg" alt="Banner" />
+                            <img className="rounded-xl h-[400px] w-full object-cover" src="banner.jpg" alt="Banner" />
                         </div>
                     </div>
                 </div>
