@@ -15,9 +15,9 @@ const Banner = () => {
 
                 {/* Ensure the absolute div is within a relative container */}
                 <div className="relative mt-5">
-                    <div className="absolute inset-0 left-40">
+                    <div className="absolute inset-0 left-[14%]">
                         <div className="bg-white bg-opacity-50 backdrop-blur-md p-3 rounded-xl border-2 w-10/12">
-                            <img className="rounded-xl h-[400px] w-full object-cover" src="banner.jpg" alt="Banner" />
+                            <img className="rounded-xl h-[400px] w-full object-cover" src="/banner.jpg" alt="Banner" />
                         </div>
                     </div>
                 </div>

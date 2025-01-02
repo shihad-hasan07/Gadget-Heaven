@@ -7,11 +7,14 @@ import Card from "../components/Card";
 import CardDetails from "../components/CardDetails";
 import AllCart from "../components/AllCart";
 import AllFaourite from "../components/AllFaourite";
+import ErrorPage from "../pages/ErrorPage";
+import Review from "../pages/Review";
 
 const routes=createBrowserRouter([
     {
         path:'/',
         element:<App></App>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',
@@ -53,6 +56,10 @@ const routes=createBrowserRouter([
                 element:<CardDetails></CardDetails>,
                 loader:()=>fetch('../data.json')
             },
+            {
+                path:'/user-review',
+                element:<Review></Review>
+            }
         ]
     },
 ])

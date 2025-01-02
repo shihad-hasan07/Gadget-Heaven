@@ -8,19 +8,22 @@ import Banner from '../components/Banner';
 
 
 const Home = () => {
+    document.title = 'Gadget Heaven'
     const categoryList = useLoaderData()
 
     return (
-        <div className=''>
+        <div className='pb-36'>
             <Banner></Banner>
 
 
             {/* all home page data */}
             <div className='flex flex-col items-center'>
                 <div className='flex gap-5'>
-                    <aside className='flex flex-col'>
-                        <Categories categoryList={categoryList}></Categories>
-                    </aside>
+                    <div>
+                        <aside className='flex flex-col p-6 rounded-3xl bg-[#f1efef86]'>
+                            <Categories categoryList={categoryList}></Categories>
+                        </aside>
+                    </div>
 
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         <Outlet></Outlet>

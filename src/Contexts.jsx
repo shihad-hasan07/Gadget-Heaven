@@ -15,9 +15,10 @@ const Contexts = ({ allroutes }) => {
         const isExist = cartData.find(d => d.id == id)
         if (isExist == undefined) {
             setCartData([...cartData, datas])
+            toast.success('Added to cart')
         }
         else {
-            toast('data already exist')
+            toast.error('Already exist')
         }
     }
 
@@ -28,10 +29,11 @@ const Contexts = ({ allroutes }) => {
         console.log(isexist);
         if (isexist == undefined) {
             setFavouriteData([...favouriteData, wishlistsss])
+            toast.success('Added to wishlist')
         }
         else {
             // setdisableFavBtn(true)
-            toast('data already exist')
+            toast.error('Already exist')
         }
     }
 

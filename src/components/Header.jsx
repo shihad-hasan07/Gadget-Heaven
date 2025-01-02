@@ -19,12 +19,13 @@ const Header = () => {
     return (
         <div className={`mt-5 p-5 mx-10 rounded-t-xl ${isHomeActive ? "bg-purple-600 text-white" : "bg-none text-black"}`}>
             <div className="flex justify-between items-center">
-                <h3 className="font-bold text-xl">Gadget Heaven</h3>
+                <h3 className="font-bold text-xl"><Link to='/'>Gadget Heaven</Link></h3>
                 <ul className="flex gap-5">
                     <li><NavLink to="/"
                         className={isHomeActive ? "active" : ''}>Home</NavLink></li>
-                    <li><NavLink to="/statictics">statictics</NavLink></li>
-                    <li><NavLink className={favourite ? 'active' : ''} to="/dashboard/cart">dashboard</NavLink></li>
+                    <li><NavLink to="/statictics">Statictics</NavLink></li>
+                    <li><NavLink to="/user-review">Review</NavLink></li>
+                    <li><NavLink className={favourite ? 'active' : ''} to="/dashboard">Dashboard</NavLink></li>
                 </ul>
                 <div className="flex gap-5">
                     <Link to="/dashboard/cart"><button className="bg-white p-2 text-black rounded-full border-2"><IoCartOutline /></button ></Link>

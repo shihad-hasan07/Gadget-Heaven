@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // import SingleCartData from './singleCartData';
 
 const AllCart = () => {
+     document.title='Gadget Heaven | cart'
     const { cartData, setCartData } = useContext(allContext)
     const [cardsssData, setCardsssData] = useState(cartData)
     const [totalPrice, setTotalPrice] = useState(0)
@@ -19,6 +20,14 @@ const AllCart = () => {
         setCardsssData(sortedData);
     };
 
+    const handlePurchase = () => {
+        document.getElementById('my_modal_1').showModal()
+        setCardsssData([])
+        // setCartData([])
+    }
+    const closeModalAndDoPurchase=()=>{
+    }
+    
     useEffect(() => {
         let total = 0;
         for (let i = 0; i < cardsssData.length; i++) {
@@ -28,13 +37,13 @@ const AllCart = () => {
     }, [cardsssData])
 
     return (
-        <div className='container  mx-auto mt-6'>
+        <div className='container pb-14 mx-auto mt-6'>
             <div className='flex justify-between items-center'>
                 <p className='text-2xl font-bold'>Cart</p>
                 <div className='flex gap-2 items-center'>
                     <p>Total Cost {totalPrice}</p>
                     <button className='border px-4 py-2 rounded-3xl font-semibold' onClick={() => sortByPrice()}>Sort by price</button>
-                    <button className='rounded-3xl bg-purple-500 py-2 px-4 text-white font-semibold'>Purchase</button>
+                    <button onClick={handlePurchase} className='rounded-3xl bg-purple-500 py-2 px-4 text-white font-semibold' disabled={cardsssData.length === 0 ? true : false}>Purchase</button>
                 </div>
             </div>
 
@@ -67,6 +76,22 @@ const AllCart = () => {
                     })
                 }
             </div>
+
+            <dialog id="my_modal_1" className="modal">
+                <div className="modal-box">
+                    <div>
+                        <img src="/Group.png" alt="" />
+                    </div>
+                    <p>Payment Successfully</p>
+                    <hr />
+                    <p>Thanks for purchasing</p>
+                    <p>Total : {totalPrice}</p>
+
+                        <form method="dialog">
+                            <button onClick={closeModalAndDoPurchase} className="btn">Close</button>
+                        </form>
+                </div>
+            </dialog>
 
         </div>
     );

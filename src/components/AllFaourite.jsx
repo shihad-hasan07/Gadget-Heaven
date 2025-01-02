@@ -4,10 +4,10 @@ import { ImCancelCircle } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 
 const AllFaourite = () => {
+     document.title='Gadget Heaven | wishlist'
     const { addToCart, favouriteData, setFavouriteData } = useContext(allContext)
     const [wishlist, setWishlist] = useState(favouriteData)
 
-    console.log('wishlit', wishlist);
 
     const deleteWishlistItem = (id) => {
         const updatedWishlist = wishlist.filter(p => p.id !== id)
@@ -16,7 +16,7 @@ const AllFaourite = () => {
     }
 
     return (
-        <div className='container mx-auto mt-6'>
+        <div className='container mx-auto pb-14 mt-6'>
             <p className='text-2xl font-bold'>Wishlist</p>
             {
                 wishlist.length === 0 ?

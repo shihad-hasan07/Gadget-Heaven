@@ -6,6 +6,7 @@ import { BsStar, BsStarFill } from "react-icons/bs";
 import { allContext } from "../Contexts";
 
 const CardDetails = () => {
+     document.title='Gadget Heaven | details'
     const cardDetail = useLoaderData()
     const { addToCart,addToFavourite,disableFavBtn } = useContext(allContext)
 

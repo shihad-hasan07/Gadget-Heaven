@@ -1,6 +1,8 @@
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 
 const Dashboard = () => {
+    document.title='Gadget Heaven | dashboard'
+
     const location=useLocation()
     return (
         <div className="">
