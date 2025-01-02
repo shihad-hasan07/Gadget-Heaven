@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { allContext } from '../Contexts';
 import { ImCancelCircle } from 'react-icons/im';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import SingleCartData from './singleCartData';
 
 const AllCart = () => {
+    const navigate=useNavigate()
      document.title='Gadget Heaven | cart'
     const { cartData, setCartData } = useContext(allContext)
     const [cardsssData, setCardsssData] = useState(cartData)
@@ -23,9 +24,10 @@ const AllCart = () => {
     const handlePurchase = () => {
         document.getElementById('my_modal_1').showModal()
         setCardsssData([])
-        // setCartData([])
+        setCartData([])
     }
     const closeModalAndDoPurchase=()=>{
+        navigate('/')
     }
     
     useEffect(() => {
@@ -78,15 +80,13 @@ const AllCart = () => {
             </div>
 
             <dialog id="my_modal_1" className="modal">
-                <div className="modal-box">
+                <div className="modal-box flex flex-col items-center gap-2">
                     <div>
                         <img src="/Group.png" alt="" />
                     </div>
-                    <p>Payment Successfully</p>
+                    <p className='text-2xl font-semibold'>Payment Successfully</p>
                     <hr />
-                    <p>Thanks for purchasing</p>
-                    <p>Total : {totalPrice}</p>
-
+                    <p className='mb-2'>Thanks for purchasing</p>
                         <form method="dialog">
                             <button onClick={closeModalAndDoPurchase} className="btn">Close</button>
                         </form>
