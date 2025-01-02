@@ -41,8 +41,8 @@ const Review = () => {
                                 <img src="/person2.jpg" className='w-full h-full object-cover rounded-full' alt="" /></div>
                         </div>
                         <div>
-                            <p className='text-blue-500 font-bold text-2xl'>Harry potter</p>
-                            <p className='mb-2 italic'>developer</p>
+                            <p className='text-blue-500 font-bold text-2xl'>Juliyet</p>
+                            <p className='mb-2 italic'>designer</p>
                             <div className='flex gap-[1px] mb-1'>
                                 <FaStar />
                                 <FaRegStar />
@@ -61,8 +61,8 @@ const Review = () => {
                                 <img src="/person3.jpg" className='w-full h-full object-cover rounded-full' alt="" /></div>
                         </div>
                         <div>
-                            <p className='text-blue-500 font-bold text-2xl'>Harry potter</p>
-                            <p className='mb-2 italic'>developer</p>
+                            <p className='text-blue-500 font-bold text-2xl'>Abdul kalam</p>
+                            <p className='mb-2 italic'>cokidar</p>
                             <div className='flex gap-[1px] mb-1'>
                                 <FaStar />
                                 <FaStar />
