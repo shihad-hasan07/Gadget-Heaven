@@ -1,5 +1,6 @@
 import { Result } from "postcss";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export const allContext = createContext()
@@ -24,25 +25,25 @@ const Contexts = ({ allroutes }) => {
 
     const addToFavourite = (id, img, description, title, price) => {
         const wishlistsss = { id, img, description, title, price }
-
         const isexist = favouriteData.find(d => d.id == id)
         console.log(isexist);
+
+
         if (isexist == undefined) {
             setFavouriteData([...favouriteData, wishlistsss])
             toast.success('Added to wishlist')
         }
         else {
-            // setdisableFavBtn(true)
             toast.error('Already exist')
         }
+        setdisableFavBtn(true)
     }
-
 
     const contextlists = {
         addToCart, addToFavourite,
         cartData, setCartData,
         favouriteData, setFavouriteData,
-        disableFavBtn
+        disableFavBtn,setdisableFavBtn
     }
 
     return (

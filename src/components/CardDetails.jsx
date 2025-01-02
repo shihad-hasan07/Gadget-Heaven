@@ -8,7 +8,7 @@ import { allContext } from "../Contexts";
 const CardDetails = () => {
      document.title='Gadget Heaven | details'
     const cardDetail = useLoaderData()
-    const { addToCart,addToFavourite,disableFavBtn } = useContext(allContext)
+    const { addToCart,addToFavourite,disableFavBtn,setdisableFavBtn,favouriteData } = useContext(allContext)
 
     const [cardData, setCardData] = useState([])
     const { id } = useParams()
@@ -18,6 +18,16 @@ const CardDetails = () => {
         const item = cardDetail.find(item => item.product_id === id)
         setCardData(item)
     }, [])
+    
+    useEffect(()=>{
+        const isFavExist=favouriteData.find(item=>item.id===id)
+        if(isFavExist){
+            setdisableFavBtn(true)
+        }
+        else{
+            setdisableFavBtn(false)
+        }
+    },[])
 
 
     const { product_id, product_image, description, product_title, Specification, rating, availability, price } = cardData
