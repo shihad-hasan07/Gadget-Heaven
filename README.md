@@ -8,7 +8,7 @@ Welcome to **GadgetHeaven**, your go-to destination for the latest and greatest 
 [Visit GadgetHeaven](https://b10-a8-one.vercel.app)
 
 ## Requirement Document Link
-[View Assignment Requirements](./Assignment-08.pdf)
+[View Assignment Requirements](https://github.com/shihad-hasan07/B10-a8/blob/main/public/Assignment-08.pdf)
 
 ---
 
