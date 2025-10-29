@@ -2,25 +2,21 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
-
 const Header = () => {
     const location = useLocation()
     const isLocation = location.pathname === '/'
     const favourite = location.pathname === '/dashboard/favourite'
-
     const alldata = location.pathname === "/category/All%20Data"
     const laptop = location.pathname === "/category/Laptops"
     const phones = location.pathname === "/category/Phones"
     const accessories = location.pathname === "/category/Accessories"
     const smart_watches = location.pathname === "/category/Smart%20Watches"
-
     const isHomeActive = (isLocation || alldata || laptop || phones || accessories || smart_watches)
-
     return (
-        <div className={`mt-5 p-5 mx-10 rounded-t-xl ${isHomeActive ? "bg-purple-600 text-white" : "bg-none text-black"}`}>
-            <div className="flex justify-between items-center">
+        <div className={`mt-5 p-5 mx-4 sm:mx-6 md:mx-8 lg:mx-10 rounded-t-xl ${isHomeActive ? "bg-purple-600 text-white" : "bg-none text-black"}`}>
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
                 <h3 className="font-bold text-xl"><Link to='/'>Gadget Heaven</Link></h3>
-                <ul className="flex gap-5">
+                <ul className="flex flex-wrap gap-3 sm:gap-5 justify-center">
                     <li><NavLink to="/"
                         className={isHomeActive ? "active" : ''}>Home</NavLink></li>
                     <li><NavLink to="/statictics">Statictics</NavLink></li>
@@ -35,5 +31,4 @@ const Header = () => {
         </div>
     );
 };
-
 export default Header;

@@ -20,16 +20,16 @@
 .notactive{
     font-size: 18px;
     border: 1px solid white;
-    border-radius: 32px;
+    border-radius: 28px;
     color: white;
     font-weight:500;
-    padding: 13px 64px;
+    padding: 10px 60px;
 }
 .isActive{
     background-color: white;
     font-size: 18px;
-    border-radius: 32px;
+    border-radius: 28px;
     color: blue;
     font-weight:bold;
-    padding: 13px 64px;
+    padding: 10px 60px;
 }
